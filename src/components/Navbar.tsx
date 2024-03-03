@@ -6,10 +6,10 @@ const beneue = Bebas_Neue({ subsets: ["latin"], weight : "400" });
 const Navbar = () => {
     return (
        
-            <div className='flex flex-row items-center w-full justify-between mt-8 mb-14'>
-                <div className={`${beneue.className}text-lg text-gray-400 tracking-wide `}>MOHSIN RAZ</div>
+            <div className='flex font-OfficeTimes bg-primary flex-row justify-center items-center w-full sticky top-0 mt-8 mb-14 md:mb-2'>
+                <div className={` md:text-5xl text-2xl text-black tracking-widest`}>MOHSIN RAZ</div>
 
-                <div>=</div>
+                
             </div>
 
     )

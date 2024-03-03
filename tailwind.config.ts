@@ -7,6 +7,9 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily:{
+      OfficeTimes : ["var(--font-officetimes)"]
+    },  
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -14,10 +17,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        primary: "#0C0F11", // Add your primary color code here
+        primary: "#FFF9E1", // Add your primary color code here
         secondary: "#4682b4", // Add your secondary color code here
         txtwhite: '#EEF5FC',
-        txtgray: '#dde1e7'
+        txtgray: '#dde1e7',
+        txtblack: '#000000'
       },
     },
   },

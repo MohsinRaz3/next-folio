@@ -2,11 +2,10 @@ import { Roboto } from "next/font/google";
 import Icon from "@/components/utils/lucidIcons";
 import Link from 'next/link'
 
-const oboto = Roboto({ subsets: ["greek"], weight: "400" });
 
 export default function Home() {
   return (
-<div className="px-7">
+<div className="px-7 md:mt-12">
 <h1 className=" md:flex md:flex-col md:items-center md:justify-center md:text-3xl text-black text-2xl text-start  font-OfficeTimes tracking-wide leading-10"> <span className="text-black text-[23px]">Hey, I'm  <span className="font-bold ">Mohsin Raz</span>👋🏼 </span> A fullstack and GenAI Developer.</h1>
 
 <div className={`text-sm md:flex md:gap-x-5 md:justify-center md:pt-8`}>
@@ -29,9 +28,9 @@ export default function Home() {
  </span></Link>
 </div>
 
-<div className="md:flex md:flex-col md:items-center md:justify-center md:mx-auto  md:px-24">
+<div className="md:flex md:flex-col md:items-center md:justify-center md:mx-auto  md:px-16 lg:px-56" >
 <h2 className="mt-14 mb-2 text-2xl text-black font-bold md:text-3xl md:py-5">ABOUT ME ...</h2>
-<p className="md:pl-12 text-xl md:text-4xl">I build modern AI and web application using cutting-edge technologies. Experienced in generative AI and Web3 development, proficient in Python & Javascript languages. On a mission to help businesses grow, by seamlessly integrating AI automation into their workflow. </p>
+<p className="md:pl-12 text-xl md:text-3xl">I build modern AI and web application using cutting-edge technologies. Experienced in generative AI and Web3 development, proficient in Python & Javascript languages. On a mission to help businesses grow, by seamlessly integrating AI automation into their workflow. </p>
 </div>
 
 </div>

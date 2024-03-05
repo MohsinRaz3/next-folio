@@ -8,7 +8,8 @@ const config: Config = {
   ],
   theme: {
     fontFamily:{
-      OfficeTimes : ["var(--font-officetimes)"]
+      OfficeTimes : ["var(--font-officetimes)"],
+      CaliberFOnt : ["var(--font-caliberfont)"]
     },  
     extend: {
       backgroundImage: {

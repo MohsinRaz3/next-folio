@@ -10,6 +10,10 @@ export const navLinks = [
     {
         label : "Contact",
         route: "/contact"
+    },
+    {
+        label : "Blogs",
+        route: "/blogs"
     }
 
 ]

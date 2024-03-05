@@ -17,12 +17,12 @@ const Navbar = () => {
       >
         MOHSIN RAZ
       </div>
-    <div className="hidden md:flex gap-5 ">
+    <div className="hidden md:flex gap-x-5 ">
     {navLinks.map((item: any) => (
         <Link
           key={item.label}
-          className={`transition-all duration-400  ease-in font-extralight py-1 border-b-2 border-${
-            path === item.route ? "black" : ""
+          className={`transition-all duration-400  ease-in     font-extralight border-${ path === item.route ?"b-2" : ""} border-${
+            path === item.route ? "black" : "red"
           } `}
           href={item.route}
         >

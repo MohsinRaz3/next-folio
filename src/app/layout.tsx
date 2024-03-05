@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import OfficeTimes from "@/components/utils/customFonts";
-import { Footer } from "@/components/Footer";
+import { MobileNav } from "@/components/MobileNav";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Mohsin Raz",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={`${OfficeTimes.className}`} >
       <Navbar />
 {children}
+<MobileNav/>
 <Footer/>
 </body>
     </html>

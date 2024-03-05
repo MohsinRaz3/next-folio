@@ -6,9 +6,8 @@ const oboto = Roboto({ subsets: ["greek"], weight: "400" });
 
 export default function Home() {
   return (
-    <main className={`bg-primary md:text-3xl md:items-center md:justify-center md:leading-relaxed font-OfficeTimes text-lg text-black flex min-h-screen flex-col items-start justify-start `}>
 <div className="px-7">
-<h1 className=" md:flex md:flex-col md:items-center md:justify-center md:text-3xl text-black text-2xl text-start  font-OfficeTimes tracking-wide leading-10"> <span className="text-black">Hey, I'm Mohsin Raz👋🏼.</span> A fullstack and GenAI Developer.</h1>
+<h1 className=" md:flex md:flex-col md:items-center md:justify-center md:text-3xl text-black text-2xl text-start  font-OfficeTimes tracking-wide leading-10"> <span className="text-black text-[23px]">Hey, I'm  <span className="font-bold ">Mohsin Raz</span>👋🏼 </span> A fullstack and GenAI Developer.</h1>
 
 <div className={`text-sm md:flex md:gap-x-5 md:justify-center md:pt-8`}>
 <Link href={"https://github.com/mohsinraz3"} target="_blank">
@@ -31,12 +30,11 @@ export default function Home() {
 </div>
 
 <div className="md:flex md:flex-col md:items-center md:justify-center md:mx-auto  md:px-24">
-<h2 className="mt-10 mb-2 text-base text-black font-bold md:text-3xl md:py-5">ABOUT ME ...</h2>
-<p className="md:pl-12 ">I build modern AI and web application using cutting-edge technologies. Experienced in generative AI and Web3 development, proficient in Python & Javascript languages. On a mission to help businesses grow, by seamlessly integrating AI automation into their workflow. </p>
+<h2 className="mt-14 mb-2 text-2xl text-black font-bold md:text-3xl md:py-5">ABOUT ME ...</h2>
+<p className="md:pl-12 text-xl md:text-4xl">I build modern AI and web application using cutting-edge technologies. Experienced in generative AI and Web3 development, proficient in Python & Javascript languages. On a mission to help businesses grow, by seamlessly integrating AI automation into their workflow. </p>
 </div>
 
 </div>
 
-    </main>
   );
 }

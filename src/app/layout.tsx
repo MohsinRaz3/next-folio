@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import OfficeTimes from "@/components/utils/customFonts";
+import {OfficeTimes} from "@/components/utils/customFonts";
 import { MobileNav } from "@/components/MobileNav";
 import Footer from "@/components/Footer";
 
@@ -20,8 +20,9 @@ export default function RootLayout({
       <body className={`${OfficeTimes.className}`} >
       <Navbar />
 {children}
-<MobileNav/>
 <Footer/>
+
+<MobileNav/>
 </body>
     </html>
   );

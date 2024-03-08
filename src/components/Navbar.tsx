@@ -4,6 +4,7 @@ import { Bebas_Neue } from "next/font/google";
 import { navLinks } from "./utils/rawData";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import {CaliberFont, OfficeTimes,CalibreReg} from "@/components/utils/customFonts";
 
 const beneue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
@@ -21,8 +22,8 @@ const Navbar = () => {
     {navLinks.map((item: any) => (
         <Link
           key={item.label}
-          className={`transition-all duration-400  ease-in     font-extralight border-${ path === item.route ?"b-2" : ""} border-${
-            path === item.route ? "black" : "red"
+          className={`transition-all duration-400  ease-in cta-link border-black  md:text-xl font-thin  border-${ path === item.route ?"b-2" : ""} border-${
+            path === item.route ? "black" : "black"
           } `}
           href={item.route}
         >

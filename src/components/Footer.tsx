@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div>
         <div className={`px-7 py-6 ${CaliberFont.className } flex flex-col items-start mt-16 -mb-28 md:px-24  lg:px-44   h-[380px] bg-[#29509D]`}>
-<p className=' font-bold py-2 text-lg text-primary'>Contact Us</p>
+<p className=' font-bold py-2 text-lg md:text-xl text-primary'>Contact Us</p>
 <p className={`text-2xl pb-5 text-primary ${OfficeTimes.className}`}>Interested in discussing a project together? I'd love to hear from you.</p>
 <div className='md:pl-28'> 
 <Link href={"/contact"} className={`flex items-center ${CalibreReg.className} px-6 py-3  bg-white border-black border-[1.5px] text-4xl rounded-full`} >Get in touch <MoveRight className='pt-2' /></Link>

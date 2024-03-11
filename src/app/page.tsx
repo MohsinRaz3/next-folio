@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
 import Icon from "@/components/utils/lucidIcons";
 import Link from 'next/link'
+import Skills from "@/components/Skills";
 
 
 export default function Home() {
@@ -34,7 +35,7 @@ export default function Home() {
 <p className="md:pl-12 text-xl md:text-3xl">I build modern AI and web application using cutting-edge technologies. Experienced in generative AI and Web3 development, proficient in Python & Javascript languages. On a mission to help businesses grow, by seamlessly integrating AI automation into their workflow. </p>
 </div>
 </div>
-
+<Skills/>
 </div>
 
   );

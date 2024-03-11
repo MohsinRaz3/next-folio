@@ -1,6 +1,6 @@
 export const navLinks = [
     {
-        label : "Home",
+        label : "About",
         route: "/"
     },
     {

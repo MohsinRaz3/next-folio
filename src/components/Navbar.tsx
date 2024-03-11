@@ -16,7 +16,7 @@ const Navbar = () => {
       <div
         className={` md:text-xl md:font-bold text-2xl text-black tracking-widest`}
       >
-        MOHSIN RAZ
+       <Link href={"/"}> MOHSIN RAZ</Link>
       </div>
     <div className="hidden md:flex gap-x-5 ">
     {navLinks.map((item: any) => (

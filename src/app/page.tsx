@@ -2,6 +2,8 @@ import { Roboto } from "next/font/google";
 import Icon from "@/components/utils/lucidIcons";
 import Link from 'next/link'
 import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Testimonials from "@/components/Testimonials";
 
 
 export default function Home() {
@@ -36,6 +38,8 @@ export default function Home() {
 </div>
 </div>
 <Skills/>
+<Projects/>
+<Testimonials/>
 </div>
 
   );

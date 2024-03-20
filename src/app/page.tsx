@@ -10,7 +10,7 @@ export default function Home() {
   return (
 <div>
 <div  className="px-7 md:mt-12">
-<h1 className=" md:flex md:flex-col md:items-center md:justify-center md:text-3xl text-black text-2xl text-start  font-OfficeTimes tracking-wide leading-10"> <span className="text-black text-[23px]">Hey, I'm  <span className="font-bold ">Mohsin Raz</span>👋🏼 </span> A fullstack and GenAI Developer.</h1>
+<h1 className=" md:flex md:flex-col md:items-center md:justify-center md:text-3xl text-black text-2xl text-start  font-OfficeTimes tracking-wide leading-10"> <span className="text-black text-[23px]">Hey, I'm  <a href="#about"><span className="font-bold ">Mohsin Raz</span></a>👋🏼 </span> A fullstack and GenAI Developer.</h1>
 
 <div className={`text-sm md:flex md:gap-x-5 md:justify-center md:pt-8`}>
 <Link href={"https://github.com/mohsinraz3"} target="_blank">

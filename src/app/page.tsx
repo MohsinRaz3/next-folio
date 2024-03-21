@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
+import ContactUs from "@/components/ContactUs";
 
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
 <Skills/>
 <Projects/>
 <Testimonials/>
+<ContactUs/>
 </div>
 
   );

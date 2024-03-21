@@ -14,7 +14,7 @@ import "slick-carousel/slick/slick.css";
  * Custom Components
  */
 import CenterAligner from "./CenterAligner";
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
 
 export default function Testimonial() {
   const sliderRef = useRef<any>();
@@ -22,11 +22,13 @@ export default function Testimonial() {
    * Settings Related to the React Slick
    */
   const settings = {
-    dots: true,
-    infinite: false,
+    dots: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed:4000,
     arrows: false,
   };
 
@@ -46,11 +48,11 @@ export default function Testimonial() {
                   {/* Left Section */}
                   <div className="space-y-5 text-center">
                     {/* Image */}
-                    <div className="border-8 inline-block rounded-full border-[#FFF9E1] p-2.5">
+                    <div className="border-8 inline-block rounded-full border-[#FFF9E1] p-2 ">
                       <div className=" mx-auto w-[100px] h-[100px] rounded-full bg-gray-200 overflow-hidden">
                         <img
                           src={single.avatar}
-                          alt="Boy"
+                          alt="avatar"
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -58,6 +60,14 @@ export default function Testimonial() {
 
                     {/* Other */}
                     <div>
+                     <div className=" flex justify-center items-center mx-auto gap-x-1 my-2">
+                     <Star className="fill-yellow-400  text-yellow-400" />
+                     <Star className="fill-yellow-400 text-yellow-400" />
+                     <Star className="fill-yellow-400 text-yellow-400" />
+                     <Star className="fill-yellow-400 text-yellow-400" />
+                     <Star className="fill-yellow-400 text-yellow-400" />
+
+                     </div>
                       <h2 className="text-xl font-medium">{single.username}</h2>
                       <p className="text-gray-600">{single.country}</p>
                     </div>

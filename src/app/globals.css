@@ -37,5 +37,6 @@ body {
 
 
    .slick-slider{
-    @apply bg-white shadow-sm;
+    @apply bg-[#FFDCB9] shadow-sm;
    }
+  

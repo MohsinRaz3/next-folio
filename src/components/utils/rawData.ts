@@ -6,14 +6,14 @@ export const navLinks = [
     },
     {
         label : "Projects",
-        route: "/",
+        route: "#projects",
         id: "#projects"
 
     },
    
     {
         label : "Testmonials",
-        route: "/",
+        route: "#testimonials",
         id:"#testmonials"
 
     },

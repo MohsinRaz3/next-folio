@@ -4,8 +4,8 @@ import Link from 'next/link'
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
-import ContactUs from "@/components/ContactUs";
-
+import Contact from "@/components/ContactUs";
+import "./globals.css"
 
 export default function Home() {
   return (
@@ -40,8 +40,8 @@ export default function Home() {
 </div>
 <Skills/>
 <Projects/>
-<Testimonials/>
-<ContactUs/>
+<Testimonials />
+<Contact/>
 </div>
 
   );

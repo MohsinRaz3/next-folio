@@ -82,7 +82,7 @@ export const testmonialsData = [
     },
     {
         username: "Braava",
-        avatar : "review/braava.webp",
+        avatar : "review/Braava.webp",
         country : "United States",
         stars: [1,2,3,4,5],
         comment : "Hands down best seller & most patient on Fiverr. Went above & beyond to help me understand every single detail which was alot. Hes a professional and the best at what he does. Look no further if you want fair prices, talented work and a very patient seller. i will be back again & again. Mohsinraz3 is my goto from now on."
@@ -127,7 +127,7 @@ export const testmonialsData = [
     },
     {
         username: "srobitschko",
-        avatar : "review/srobitschko.webp",
+        avatar : "review/Srobitschko.webp",
         country : "Austria",
         stars: [1,2,3,4,5],
         comment : "Very good. we are satisfied. he worked fast and good, he did all what we asked for and we didnt need to make any changes . thank you we will work with him again :)"
@@ -136,7 +136,7 @@ export const testmonialsData = [
     },
     {
         username: "stefanklaussner",
-        avatar : "review/stefan.webp",
+        avatar : "review/Stefan.webp",
         country : "Germany",
         stars: [1,2,3,4,5],
         comment : "Did a very good job of getting 10k in NFTs on opensea. He also helped clean up the metadata so everything is correct."
@@ -145,7 +145,7 @@ export const testmonialsData = [
     },
     {
         username: "prachimodi764",
-        avatar : "review/prachimodi764.jpg",
+        avatar : "review/Prachimodi764.jpg",
         country : "United States",
         stars: [1,2,3,4,5],
         comment : "Extremely professional! Would work with him again! "
@@ -154,7 +154,7 @@ export const testmonialsData = [
     },
     {
         username: "freedomwings",
-        avatar : "review/freedomwings.webp",
+        avatar : "review/Freedomwings.webp",
         country : "Germany",
         stars: [1,2,3,4,5],
         comment : "From 10 Sellers on Fiverr sadly only 1 or 2 truly meet the 5 Star rating. Mohsinraz3 definitely is in the top 10%! I am very satisfied with his work and communication (very important to me)! He always kept me updated about project progress! I will most definitely use his services again! Thank you Mohsinraz3! EC"
@@ -163,7 +163,7 @@ export const testmonialsData = [
     },
     {
         username: "mvitaletb303",
-        avatar : "review/mvitaletb303.webp",
+        avatar : "review/Mvitaletb303.webp",
         country : "Thailand",
         stars: [1,2,3,4,5],
         comment : "100% satisfaction! Great seller, pre -and post job, very helpful and patient "
@@ -199,7 +199,7 @@ export const testmonialsData = [
     },
     {
         username: "eddie_abreu",
-        avatar : "review/eddie_abreu.webp",
+        avatar : "review/Eddie_abreu.webp",
         country : "Brazil",
         stars: [1,2,3,4,5],
         comment : "I am impressed with Mohsin’s professionalism. The collection looks even better than expected."
@@ -216,7 +216,7 @@ export const testmonialsData = [
     },
     {
         username: "amorte",
-        avatar : "review/amorte.webp",
+        avatar : "review/Amorte.webp",
         country : "Germany",
         stars: [1,2,3,4,5],
         comment : "Mohsin is a man with competence, communication and kindness. He helped me prepare the collection and asked all my questions. Perfect, just great. So I would definitely recommend to take him on board on your NFT trip."
@@ -243,7 +243,7 @@ export const testmonialsData = [
     ,
     {
         username: "federicocrusco",
-        avatar : "review/federicocrusco.webp",
+        avatar : "review/Federicocrusco.webp",
         country : "Italy",
         stars: [1,2,3,4,5],
         comment : "Mohsin is the best, he works fast and very well. TOP "

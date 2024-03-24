@@ -100,7 +100,7 @@ export const testmonialsData = [
     },
     {
         username: "gitsolutionllc",
-        avatar : "review/gitsolution.webp",
+        avatar : "review/Gitsolution.webp",
         country : "Germany",
         stars: [1,2,3,4,5],
         comment : "one of the best !!! you need trustful and professionell help? book him. we come the bext month again"
@@ -145,7 +145,7 @@ export const testmonialsData = [
     },
     {
         username: "prachimodi764",
-        avatar : "review/Prachimodi764.jpg",
+        avatar : "review/Prachimodi764.JPG",
         country : "United States",
         stars: [1,2,3,4,5],
         comment : "Extremely professional! Would work with him again! "

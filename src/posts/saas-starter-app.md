@@ -21,7 +21,7 @@ My implementation is opinionated (as you'll see), and intended to serve as a sta
 - [CRUD operations](#crud-operations)
 - [Lessons Learnt](#lessons-learnt)
 
-You can view the example at https://saas-starter-stack.com/app/ and the source on [GitHub](https://github.com/pixegami/saas-starter). In this post, I'll be reflecting on my choices and experience for each of the above features.
+You can view the example at https://saas-starter-stack.com/app/. In this post, I'll be reflecting on my choices and experience for each of the above features.
 
 ### Authentication
 

@@ -77,7 +77,6 @@ Additionally, for my example prompts, I'll avoid using existing text—the AI ma
 
 I'll then talk about the best samples in each batch and anything I find interesting about them.
 
-Also I've pushed the [full set of results on GitHub](https://github.com/pixegami/gpt-3-poetry-results) if you wanted to check out the rest of the samples.
 
 ## 🧪 Results
 
@@ -239,7 +238,6 @@ So many things I love about this response.
 - It writes a sensible continuation of the prompt.
 - It even manages rhyming (between 'one/sun', and 'spell/hell').
 
-A lot of the other samples were also quite interesting (check them out [here](https://github.com/pixegami/gpt-3-poetry-results)) and full of creative ideas.
 
 ### ✍ Hacker Rap
 
@@ -279,7 +277,5 @@ That's pretty much all I had to share this time around. GPT-3 has definitely imp
 In a batch of 20 samples, not all of them are great—but the good ones are sometimes _really_ good.
 
 If I wanted to use it in this way, I'd need a process that allows a human (me) to select and use the best samples.
-
-I hope this was interesting! I also covered everything here in a video as well (which I geared towards less technical viewers) which you can check out [here](https://www.youtube.com/watch?v=r3zKcL0iGeA&t=47s).
 
 Thanks for reading!

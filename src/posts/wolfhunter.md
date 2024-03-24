@@ -10,7 +10,6 @@ I recently gave it a go myself, making a small RPG combat game called "Wolfhunte
 
 I spent two weekends on the project, which—despite my prior experience in games development—still managed to surprise me with some interesting challenges.
 
-[Source (GitHib)](https://github.com/pixegami/wolfhunter) | [Play the Game! (Web, Mobile)](https://pixegami.github.io/wolfhunter/)
 
 ![images/wolfhunter_title](/images/wolfhunter_title.png)
 
@@ -20,7 +19,7 @@ Wolfhunter is an 8-bit RPG where you play as a hunter facing off against a werew
 
 You have magic spells and single-use items at your disposal, but the wolf is very powerful. The only way to kill it is to weaken it with your attacks, then finish it off with a silver-knife (which you only have one shot at).
 
-It is made with [PICO-8](https://www.lexaloffle.com/pico-8.php), and can be played directly in your browser [here](https://pixegami.github.io/wolfhunter/).
+It is made with [PICO-8](https://www.lexaloffle.com/pico-8.php).
 
 > The motif and design of the game was based on the word "Moonshot", which was the theme of [GitHub's GameOff 2020 game jam](https://github.blog/2020-11-01-github-game-off-2020-theme-announcement/).
 
@@ -292,5 +291,3 @@ That pretty much sums up my experience of implementing RPG combat in [PICO-8](ht
 With a bit of work, I think it'd be possible to implement a more Pokemon-like RPG in PICO-8, but probably on a smaller scale, because of the memory and size limits (I was almost at 30% capacity with just this).
 
 At some point though, dealing with over 1,000 lines of code in a single `lua` run-time becomes unwieldy. So whilst something like [Unity](https://unity.com/) is better suited for serious projects, PICO-8 is still a great way to learn and prototype ideas.
-
-> Wolfhunter's [source code](https://github.com/pixegami/wolfhunter) is public, and you can play the game directly in the browser (both web and mobile) [here](https://pixegami.github.io/wolfhunter/).

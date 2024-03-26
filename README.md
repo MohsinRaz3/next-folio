@@ -7,6 +7,7 @@ Welcome to the repository for my Portfolio Website! This website showcases my pr
 
 ## Technologies Used
 
+
 - **Next.js**: A React framework for building server-rendered applications, providing fast performance and SEO benefits.
 - **Tailwind CSS**: A utility-first CSS framework for building custom designs with ease and efficiency.
 - **FormSpree**: A form backend service that allows you to handle form submissions effortlessly.

@@ -1,5 +1,5 @@
 # Portfolio Website
-![Mohsin's Portfolio](/mohsin-portfolio.png)
+![Mohsin's Portfolio](https://github.com/MohsinRaz3/next-folio/blob/main/public/mohsin-portfolio.png)
 
 
 Welcome to the repository for my Portfolio Website! This website showcases my projects, skills, and experiences in an elegant and user-friendly manner. Built with cutting-edge technologies, it offers a seamless browsing experience for visitors.

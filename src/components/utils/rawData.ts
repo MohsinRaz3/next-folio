@@ -62,7 +62,7 @@ export const projectData = [
     {
         id: 5,
         projectName: "Notes App",
-        projectLink: "https://notes-fastapi.vercel.app/",
+        projectLink: "https://github.com/MohsinRaz3/fastapi-notesapp",
         Techstack: ["FastAPI","Next.js", "Postgresql"],
         src: "/notesapp.png",
         alt: "notes app"

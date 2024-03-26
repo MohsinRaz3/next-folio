@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
+![Mohsin's Portfolio](/mohsin-portfolio.png)
+
+
+Welcome to the repository for my Portfolio Website! This website showcases my projects, skills, and experiences in an elegant and user-friendly manner. Built with cutting-edge technologies, it offers a seamless browsing experience for visitors.
+
+## Technologies Used
+
+- **Next.js**: A React framework for building server-rendered applications, providing fast performance and SEO benefits.
+- **Tailwind CSS**: A utility-first CSS framework for building custom designs with ease and efficiency.
+- **FormSpree**: A form backend service that allows you to handle form submissions effortlessly.
+- **Slick-Carousel**: A responsive and customizable carousel component for showcasing images or content.
+- **Lucid React Icons**: A collection of icons for React projects, providing a wide range of high-quality icons for various purposes.
+- **Markdown**: Utilized for easily creating and managing content, such as blog posts.
+- **TypeScript**: A statically typed superset of JavaScript, enhancing code quality and developer productivity.
+
+## Features
+
+- **Responsive Design**: The website is fully responsive, ensuring optimal viewing experiences across various devices and screen sizes.
+- **Project Showcase**: Showcases your projects with detailed descriptions, images, and links to live demos or GitHub repositories.
+- **Skills Section**: Highlights your skills and expertise, allowing visitors to understand your technical capabilities.
+- **Contact Form**: Integrates a contact form powered by FormSpree, enabling visitors to reach out to you easily.
+- **Carousel Component**: Utilizes Slick-Carousel to create dynamic and visually appealing carousel sections for testimonials.
+
+## Deployment
+
+The Portfolio Website is deployed on [Vercel](https://vercel.com/), offering fast and reliable hosting services for Next.js applications. With automatic deployments, you can seamlessly update your website with new content or features.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy of the Portfolio Website up and running, follow these simple steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js and npm installed on your machine.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MohsinRaz3/next-folio

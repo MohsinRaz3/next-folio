@@ -1,17 +1,9 @@
 # Portfolio Website
 ![Mohsin's Portfolio](https://github.com/MohsinRaz3/next-folio/blob/main/public/mohsin-portfolio.png)
 
-
-
-
 Welcome to the repository for my Portfolio Website! This website showcases my projects, skills, and experiences in an elegant and user-friendly manner. Built with cutting-edge technologies, it offers a seamless browsing experience for visitors.
 
 ## Technologies Used
-
-
-
-
-
 
 - **Next.js**: A React framework for building server-rendered applications, providing fast performance and SEO benefits.
 - **Tailwind CSS**: A utility-first CSS framework for building custom designs with ease and efficiency.

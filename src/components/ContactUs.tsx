@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import { useForm } from "@formspree/react";
-import Link from "next/link";
-import { Mail } from "lucide-react";
+
 export default function Contact() {
   const [state, handleSubmit] = useForm("xzbnaqzz");
 

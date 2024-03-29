@@ -1,4 +1,3 @@
-import { Roboto } from "next/font/google";
 import Icon from "@/components/utils/lucidIcons";
 import Link from 'next/link'
 import Skills from "@/components/Skills";

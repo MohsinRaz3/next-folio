@@ -13,6 +13,24 @@ const config: Config = {
       CalibreReg : ["var(--font-calibrereg"]
     },  
     extend: {
+      screens: {
+        'sm': '320px',
+        // => @media (min-width: 640px) { ... }
+
+        'mm': '375px',
+        // => @media (min-width: 768px) { ... }
+
+        'ml': '425px',
+        // => @media (min-width: 1024px) { ... }
+
+        'md': '768px',
+        // => @media (min-width: 1280px) { ... }
+
+        'lg': '1024px',
+        'xl': '1440px',
+        '2xl': '2560px',
+        // => @media (min-width: 1536px) { ... }
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -2,6 +2,33 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import getPostMetadata from '@/components/getPostMetdata';
+import { Metadata } from 'next';
+interface RouteParams {
+  slug: string;
+}
+
+interface RouteData {
+  params: RouteParams;
+  
+}
+
+export async function generateMetadata(props: RouteData):Promise<Metadata | undefined> {
+ const slug = props.params.slug;
+
+  const posts = await getPostMetadata(); 
+  //console.log("slug",posts);
+  
+  return posts.find((post)=>{
+    if(post.slug === slug){
+     // console.log(post.subtitle);
+      
+     return { 
+        title: post.subtitle,
+        description: post.subtitle
+      }
+    }
+  })
+}
 
 const getPostContent = (slug:string)=>{
     const folder = "src/posts/";
@@ -16,6 +43,8 @@ export const generateStaticParams = () => {
   return posts.map((post)=>({
     slug: post.slug,
   }))
+
+  
 }     
 
 const PostPage = (props: any) => {

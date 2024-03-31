@@ -2,7 +2,14 @@ import { MoveDownRight } from 'lucide-react'
 import { projectData } from '../components/utils/rawData'
 import Link from 'next/link'
 import React from 'react'
-
+interface Project {
+    id: number;
+    projectName: string;
+    projectLink: string;
+    Techstack: string[];
+    src: string;
+    alt: string;
+  }
 
 const Projects = () => {
     
@@ -12,7 +19,7 @@ const Projects = () => {
                 <h2 className="mt-14 mb-2 text-4xl text-black font-bold md:text-4xl flex flex-nowrap md:py-5"><p className='mx-auto'>Projects..</p></h2>
               <div className='grid grid-cols-1 lg:gap-8 lg:grid-cols-2 place-items-center'>
               {
-                 projectData.map((item:any)=>(
+                 projectData.map((item:Project)=>(
                     <div key={item.id} className='flex py-8  flex-col'>
                     <div ><Link href={item.projectLink} target="_blank" className='flex gap-2'><h3 className='text-2xl font-bold underline'>{item.projectName}</h3> <MoveDownRight className='hover:text-blue-800 pt-1' /></Link></div>
                     <div className='flex gap-x-2  items-end'>

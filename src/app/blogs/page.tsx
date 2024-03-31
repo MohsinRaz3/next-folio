@@ -1,6 +1,15 @@
 import getPostMetadata from '@/components/getPostMetdata';
 import PostPreview from '@/components/PostPreview';
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title : {
+    absolute : "Mohsin's Blog"
+  },
+  description: "Welcome to my Blog page"
+}
+
 const HomePage=()=>{
   const postMetadata = getPostMetadata();
   const postPreview = postMetadata.map((post: any) =>(

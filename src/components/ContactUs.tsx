@@ -22,7 +22,7 @@ export default function Contact() {
        Contact Me
       </h1> */}
         </div>
-        <section className=" lg:flex lg:flex-row  transition-all w-11/12 sm:w-10/12 md:w-11/12 mx-auto">
+        <section className=" md:flex lg:flex-row  transition-all w-11/12 sm:w-10/12 md:w-11/12 mx-auto">
           <div className="w-11/12 m-auto ml-0   py-12  lg:w-6/12">
             <div className="flex flex-col pl-1   mx-auto justify-center items-center">
             <h1 className="text-centertext-slate-800 text-4xl font-bold sm:text-3xl pb-5">
@@ -31,7 +31,7 @@ export default function Contact() {
             
             </div>
           </div>
-          <div className=" bg-[#FFDCB9] px-3 mx-auto rounded-lg   w-full lg:w-6/12">
+          <div className=" bg-[#FFDCB9] px-3 md:pl-10 mx-auto rounded-lg   w-full lg:w-6/12">
             <form
               onSubmit={handleSubmit}
               className="w-11/12 m-auto ml-0 lg:ml-auto py-12 md:w-10/12"

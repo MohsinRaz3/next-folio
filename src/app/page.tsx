@@ -4,7 +4,15 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/ContactUs";
+import { Metadata } from "next";
 import "./globals.css"
+
+export const metadata: Metadata = {
+  title :{
+    absolute:  "Mohsin Raz"
+  },
+  description: "I create modern webapp with next.js and fastapi"
+}
 
 export default function Home() {
   return (

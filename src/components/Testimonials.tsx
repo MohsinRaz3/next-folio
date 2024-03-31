@@ -44,7 +44,7 @@ export default function Testimonial() {
           {testmonialsData.map((single, index) => {
             return (
               <div key={index} className="bg-[#FFDCB9] h-full">
-                <section className="mx-auto bg-[#FFDCB9] p-5 sm:p-12 grid grid-cols-1 sm:grid-cols-[1fr_3fr] md:grid-cols-[1fr_4fr] items-center gap-5 md:gap-8 rounded-xl overflow-hidden">
+                <section className="mx-auto bg-[#FFDCB9] p-5 sm:p-12 md:grid grid-cols-1 sm:grid-cols-[1fr_3fr] md:grid-cols-[1fr_4fr] items-center gap-5 md:gap-8 rounded-xl overflow-hidden">
                   {/* Left Section */}
                   <div className="space-y-5 text-center">
                     {/* Image */}

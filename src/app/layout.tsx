@@ -6,8 +6,14 @@ import { MobileNav } from "@/components/MobileNav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Mohsin Raz",
-  description: " Mohsin's Portfolio website",
+  title: {
+    default: "Mohsin's Portfolio",
+    template : "%s - My portfolio"
+  },
+  description: "I build modern webapp with next.js and fastapi",
+  twitter: {
+    card : "summary_large_image"
+  }
 };
 
 export default function RootLayout({

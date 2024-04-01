@@ -66,6 +66,14 @@ export const projectData = [
         Techstack: ["FastAPI","Next.js", "Postgresql"],
         src: "/notesapp.png",
         alt: "notes app"
+    },
+    {
+        id: 6,
+        projectName: "Stoney Moo",
+        projectLink: "https://stoneymoo.netlify.app/",
+        Techstack: ["HTML","Javascript", "Sass"],
+        src: "/stoneymoo.png",
+        alt: "stoneymoo website"
     }
 
 ]

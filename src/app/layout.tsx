@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   description: "I build modern webapp with next.js and fastapi",
   twitter: {
     card : "summary_large_image"
+  },openGraph: {
+    images: '/opengraph-image.png',
   }
 };
 

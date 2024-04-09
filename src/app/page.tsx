@@ -11,7 +11,10 @@ export const metadata: Metadata = {
   title :{
     absolute:  "Mohsin Raz"
   },
-  description: "I create modern webapp with next.js and fastapi"
+  description: "I create modern webapp with next.js and fastapi",
+  openGraph: {
+    images: '/opengraph-image.png',
+  }
 }
 
 export default function Home() {

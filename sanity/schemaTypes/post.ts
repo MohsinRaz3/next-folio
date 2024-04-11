@@ -9,6 +9,14 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: Rule => Rule.max(60).warning('Title should not exceed 60 characters.')
+
+    }),
+    defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+      validation: Rule => Rule.max(160).warning('Description should not exceed 160 characters.')
     }),
     defineField({
       name: 'slug',

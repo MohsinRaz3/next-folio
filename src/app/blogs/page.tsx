@@ -3,6 +3,8 @@ import { sanityFetch } from "../../../sanity/lib/fetch"
 import { postsQuery } from "../../../sanity/lib/queries"
 import { SanityDocument } from "next-sanity"
 
+export const revalidate = 10;
+
 const page = async () => {
     const posts = await sanityFetch<SanityDocument[]>({ query: postsQuery })
     console.log("GEt santy data",posts)

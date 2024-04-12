@@ -7,11 +7,15 @@ import Post from "@/components/Post";
 interface RouteParams {
   slug: string;
 }
-export const revalidate = 60;
+export const revalidate = 10;
 
 export async function generateStaticParams() {
   const posts = await client.fetch(postPathsQuery);
-  return posts
+ // console.log("lesssgoooo",posts);
+  
+  return posts.map((post:any) => ({
+    slug: post.slug,
+  }))
 }
 
 const PostPage = async ({ params }: { params: RouteParams }) => {

@@ -1,4 +1,3 @@
-
 import { SanityDocument } from "@sanity/client";
 import { PortableText } from "@portabletext/react";
 import { client } from "../../sanity/lib/client";

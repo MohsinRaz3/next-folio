@@ -1,9 +1,26 @@
 import {defineField, defineType} from 'sanity'
+import { Search } from 'lucide-react';
 
 export default defineType({
   name: 'post',
   title: 'Post',
   type: 'document',
+  initialValue : {
+    title: "Blog Page"
+  },
+
+  // groups: [
+  //   {
+  //     name:"seo",
+  //     title: "SEO",
+  //     icon: Search,
+  //   },
+  //   {
+  //     name : "page",
+  //     title: "Page",
+  //   }
+  // ],
+
   fields: [
     defineField({
       name: 'title',

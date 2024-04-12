@@ -6,6 +6,7 @@ const Posts = ({ posts = [] }: { posts: SanityDocument[] }) => {
   const convertDate = (date: string) => {
     return new Date(date).toLocaleDateString("en-PK", { day: "numeric", month: "short", year: "numeric" })
   }
+  
 
   return (
     <div className="py-10 mx-auto grid grid-cols-1">

@@ -3,7 +3,7 @@ import { postPathsQuery, postQuery } from "../../../..//sanity/lib/queries";
 import { sanityFetch } from "../../../../sanity/lib/fetch";
 import { client } from "../../../../sanity/lib/client";
 import Post from "@/components/Post";
-import { Metadata } from "next";
+
 
 interface RouteParams {
   slug: string;
@@ -12,18 +12,8 @@ interface RouteParams {
 
 export async function generateMetadata({ params }: { params: RouteParams }) {
   try {
-
-    // async function findPost(){
-    //   const posts = await client.fetch(postPathsQuery);
-    //   if (!posts) return "noty value";
-    // const slugVal =  posts.find((post:any) => post.params.slug == params)
-    //   return slugVal
-    // console.log("slug value",slugVal);
-    
-    // }
-
     const post = await sanityFetch<SanityDocument>({ query: postQuery, params })
-    console.log("this is slug dear",post.slug);
+  // console.log("this is slug dear",post.seo);
      
     if (!post) 
       return {
@@ -34,16 +24,29 @@ export async function generateMetadata({ params }: { params: RouteParams }) {
       title: post.seo.seoTitle,
       description: post.seo.seoDescription,
       alternates : {
-        canonical : `http://localhost:3000/blogs/${post.slug.current}}`
-      }
+        canonical : `/blogs/${post.slug.current}`,
+        languages: {
+          "en-US": `en-US/blogs/${post.slug.current}`,
+          "de-DE": `de-DE/blogs/${post.slug.current}`,
+        },
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: post.seo.seoTitle,
+        description: post.seo.seoDescription,
+        siteId: '1467726470533754880',
+        creator: '@mohsin_codes',
+        creatorId: '1467726470533754880',
+        images: ['https://nextjs.org/og.png'], // Must be an absolute URL
+      },
     }
 
 
   } catch (error) {
     console.error(error);
     return {
-      title: "No Found",
-      description: "The page you're looking for does not exists."
+      title: "No SEO title found",
+      description: "No SEO description found for this page."
     }
 
   }
@@ -54,7 +57,7 @@ export async function generateStaticParams() {
   if (!posts) return [];
   // console.log("lesssgoooo",posts);
   return posts.map((post: any) => ({
-    slug: post.slug,
+    slug: post.params.slug,
   }))
 }
 

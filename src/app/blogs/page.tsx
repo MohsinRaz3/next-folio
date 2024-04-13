@@ -7,7 +7,7 @@ export const revalidate = 10;
 
 const page = async () => {
     const posts = await sanityFetch<SanityDocument[]>({ query: postsQuery })
-    console.log("GEt santy data",posts)
+    //console.log("GEt santy data",posts)
     return (
         <div>
             <main className="max-w-7xl mx-auto px-4 py-16 min-h-screen">

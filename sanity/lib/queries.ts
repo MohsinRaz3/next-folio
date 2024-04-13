@@ -24,5 +24,5 @@ export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{
 
 // Get all post slugs
 export const postPathsQuery = groq`*[_type == "post" && defined(slug.current)][]{
-    "params": { "slug": slug.current }
+    "params": { "slug": slug.current },_createdAt,
   }`;

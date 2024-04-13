@@ -13,7 +13,12 @@ export const postsQuery = groq`*[_type == "post"] {
 
 // Get a single post by its slug
 export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{ 
-    title, description, mainImage, body,
+    title, slug, description, mainImage, body, "seo": seo {
+      "ogURL":ogimage.asset->url,
+      keywords,
+      seoDescription,
+      seoTitle
+    }
   }`;
  
 

@@ -4,6 +4,7 @@ import { client } from "../../sanity/lib/client";
 import imageUrlBuilder from "@sanity/image-url";
 import Image from "next/image";
 
+
 const builder = imageUrlBuilder(client);
 
 const Post = ({ post }: { post: SanityDocument }) => {

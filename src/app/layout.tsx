@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: {
     default: "Mohsin's Portfolio",
-    template : "%s - My portfolio"
+    template : "%s -  Portfolio"
   },
   description: "I build modern webapp with next.js and fastapi",
   twitter: {

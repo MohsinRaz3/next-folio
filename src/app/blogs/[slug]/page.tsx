@@ -1,67 +1,73 @@
-import fs from 'fs';
-import Markdown from 'markdown-to-jsx';
-import matter from 'gray-matter';
-import getPostMetadata from '@/components/getPostMetdata';
-import { Metadata } from 'next';
+import { SanityDocument } from "@sanity/client";
+import { postPathsQuery, postQuery } from "../../../..//sanity/lib/queries";
+import { sanityFetch } from "../../../../sanity/lib/fetch";
+import { client } from "../../../../sanity/lib/client";
+import Post from "@/components/Post";
+
+
 interface RouteParams {
   slug: string;
 }
+// export const revalidate = 10;
 
-interface RouteData {
-  params: RouteParams;
-  
-}
-
-export async function generateMetadata(props: RouteData):Promise<Metadata | undefined> {
- const slug = props.params.slug;
-
-  const posts = await getPostMetadata(); 
-  //console.log("slug",posts);
-  
-  return posts.find((post)=>{
-    if(post.slug === slug){
-     // console.log(post.subtitle);
-      
-     return { 
-        title: post.subtitle,
-        description: post.subtitle
-      }
+export async function generateMetadata({ params }: { params: RouteParams }) {
+  try {
+    const post = await sanityFetch<SanityDocument>({ query: postQuery, params })
+  // console.log("this is slug dear",post.seo);
+     
+    if (!post) 
+      return {
+      title: "No Found",
+      description: "The page you're looking for does not exists."
     }
-  })
-}
+    return {
+      title: post.seo.seoTitle,
+      description: post.seo.seoDescription,
+      alternates : {
+        canonical : `/blogs/${post.slug.current}`,
+        languages: {
+          "en-US": `en-US/blogs/${post.slug.current}`,
+          "de-DE": `de-DE/blogs/${post.slug.current}`,
+        },
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: post.seo.seoTitle,
+        description: post.seo.seoDescription,
+        siteId: '1467726470533754880',
+        creator: '@mohsin_codes',
+        creatorId: '1467726470533754880',
+        images: ['https://nextjs.org/og.png'], // Must be an absolute URL
+      },
+    }
 
-const getPostContent = (slug:string)=>{
-    const folder = "src/posts/";
-    const file = `${folder}${slug}.md`;
-    const content = fs.readFileSync(file,"utf8");
-    const matterResult = matter(content)
-    return matterResult
-}
 
-export const generateStaticParams = () => {
-  const posts = getPostMetadata()
-  return posts.map((post)=>({
-    slug: post.slug,
+  } catch (error) {
+    console.error(error);
+    return {
+      title: "No SEO title found",
+      description: "No SEO description found for this page."
+    }
+
+  }
+};
+
+export async function generateStaticParams() {
+  const posts = await client.fetch(postPathsQuery);
+  if (!posts) return [];
+  // console.log("lesssgoooo",posts);
+  return posts.map((post: any) => ({
+    slug: post.params.slug,
   }))
+}
 
-  
-}     
-
-const PostPage = (props: any) => {
-
-    const slug = props.params.slug;
-    const post = getPostContent(slug)
+const PostPage = async ({ params }: { params: RouteParams }) => {
+  const post = await sanityFetch<SanityDocument>({ query: postQuery, params })
+  // console.log(post);
 
   return (
-    <div className='md:flex md:flex-col md:mx-auto md:justify-center md:items-center px-3 '> 
-      <div className='my-12 text-center'>
-        <h1 className="text-2xl text-slate-600 text-center" >{post.data.title} </h1>
-        <p className='text-slate-400 mt-2'>{post.data.date}</p>
-      </div>
-    <article className='prose lg:prose-xl'> <Markdown>{post.content}</Markdown></article>
-   
-    </div>
+    <Post post={post} />
   )
 }
 
-export default PostPage;
+export default PostPage

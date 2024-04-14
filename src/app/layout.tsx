@@ -1,3 +1,4 @@
+import { GoogleTagManager } from '@next/third-parties/google'
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -29,6 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+            <GoogleTagManager gtmId="TRVMTP3M" />
       <body className={`${OfficeTimes.className}`} >
         <Navbar />
         {children}

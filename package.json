@@ -11,6 +11,7 @@
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@next/third-parties": "^14.2.1",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.36.4",
     "@types/react-slick": "^0.23.13",

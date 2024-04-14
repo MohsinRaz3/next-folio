@@ -1,8 +1,7 @@
 "use client";
 import React, { useRef } from "react";
-import Image from "next/image";
 import { testmonialsData } from "./utils/rawData";
-
+import { sendGTMEvent } from '@next/third-parties/google'
 /**
  * Related to the React Slick
  */
@@ -95,13 +94,13 @@ export default function Testimonial() {
         {/* Custom Buttons */}
         <button
           className="absolute top-[50%] left-[10px] z-10 text-2xl text-gray-600"
-          onClick={() => sliderRef?.current?.slickPrev()}
+          onClick={() => (sliderRef?.current?.slickPrev(), sendGTMEvent({ event: 'buttonClicked', value: 'xyz' }))}
         >
          <ChevronLeft />
         </button>
-        <button
+        <button 
           className="absolute top-[50%] right-[10px] z-10 text-2xl text-gray-600"
-          onClick={() => sliderRef?.current?.slickNext()}
+          onClick={() => (sliderRef?.current?.slickNext(), sendGTMEvent({ event: 'buttonClicked', value: 'xyz' }) )}
         >
          <ChevronRight />
         </button>

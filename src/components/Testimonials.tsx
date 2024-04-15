@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import { testmonialsData } from "./utils/rawData";
 import { sendGTMEvent } from '@next/third-parties/google'
+import Image from "next/image";
 /**
  * Related to the React Slick
  */
@@ -27,13 +28,13 @@ export default function Testimonial() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed:4000,
+    autoplaySpeed: 4000,
     arrows: false,
   };
 
   return (
     <CenterAligner className="bg-[#FFF9E1] px-5 py-10">
-      <h1 id="testimonials"  className="text-center text-4xl font-bold sm:text-3xl pb-8">
+      <h1 id="testimonials" className="text-center text-4xl font-bold sm:text-3xl pb-8">
         What clients say about Mohsin..
       </h1>
       {/* Container for the Slider */}
@@ -42,31 +43,33 @@ export default function Testimonial() {
         <Slider className="bg-[#FFDCB9]"    {...settings} ref={sliderRef}>
           {testmonialsData.map((single, index) => {
             return (
-              <div key={index} className="bg-[#FFDCB9] h-full">
+              <div key={single.username} className="bg-[#FFDCB9] h-full">
                 <section className="mx-auto bg-[#FFDCB9] p-5 sm:p-12 md:grid grid-cols-1 sm:grid-cols-[1fr_3fr] md:grid-cols-[1fr_4fr] items-center gap-5 md:gap-8 rounded-xl overflow-hidden">
                   {/* Left Section */}
                   <div className="space-y-5 text-center">
                     {/* Image */}
                     <div className="border-8 inline-block rounded-full border-[#FFF9E1] p-2 ">
                       <div className=" mx-auto w-[100px] h-[100px] rounded-full bg-[#FFDCB9] overflow-hidden">
-                        <img
+                        <Image
                           src={single.avatar}
                           alt="avatar"
                           className="w-full h-full object-cover"
+                          width={500}
+                          height={500}
                         />
                       </div>
                     </div>
 
                     {/* Other */}
                     <div>
-                     <div className=" flex justify-center items-center mx-auto gap-x-1 my-2">
-                     <Star className="fill-yellow-400  text-yellow-400" />
-                     <Star className="fill-yellow-400 text-yellow-400" />
-                     <Star className="fill-yellow-400 text-yellow-400" />
-                     <Star className="fill-yellow-400 text-yellow-400" />
-                     <Star className="fill-yellow-400 text-yellow-400" />
+                      <div className=" flex justify-center items-center mx-auto gap-x-1 my-2">
+                        <Star className="fill-yellow-400  text-yellow-400" />
+                        <Star className="fill-yellow-400 text-yellow-400" />
+                        <Star className="fill-yellow-400 text-yellow-400" />
+                        <Star className="fill-yellow-400 text-yellow-400" />
+                        <Star className="fill-yellow-400 text-yellow-400" />
 
-                     </div>
+                      </div>
                       <h2 className="text-xl font-medium">{single.username}</h2>
                       <p className="text-gray-600">{single.country}</p>
                     </div>
@@ -93,16 +96,18 @@ export default function Testimonial() {
 
         {/* Custom Buttons */}
         <button
+          aria-label="Left Arrow"
           className="absolute top-[50%] left-[10px] z-10 text-2xl text-gray-600"
           onClick={() => (sliderRef?.current?.slickPrev(), sendGTMEvent({ event: 'buttonClicked', value: 'xyz' }))}
         >
-         <ChevronLeft />
+          <ChevronLeft />
         </button>
-        <button 
+        <button
+          aria-label="Right Arrow"
           className="absolute top-[50%] right-[10px] z-10 text-2xl text-gray-600"
-          onClick={() => (sliderRef?.current?.slickNext(), sendGTMEvent({ event: 'buttonClicked', value: 'xyz' }) )}
+          onClick={() => (sliderRef?.current?.slickNext(), sendGTMEvent({ event: 'buttonClicked', value: 'xyz' }))}
         >
-         <ChevronRight />
+          <ChevronRight />
         </button>
       </section>
     </CenterAligner>

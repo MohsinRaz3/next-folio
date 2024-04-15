@@ -2,6 +2,8 @@ import { MoveDownRight } from 'lucide-react'
 import { projectData } from '../components/utils/rawData'
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
+
 interface Project {
     id: number;
     projectName: string;
@@ -37,7 +39,7 @@ const Projects = () => {
                         </span>
 
                     </div>
-                   {item.src === "/financex.mp4" ?  <iframe className="w-full xl:w-[576px] md:w-[480px] lg:w-[364px] lg:h-[222px] xl:h-[348px]  rounded-sm md:rounded-xl  aspect-[4/3]  " src={item.src}></iframe> : <img className='rounded-sm md:rounded-md  w-[300px] md:w-[480px]  lg:w-[364px]' src={item.src} alt={item.alt}/>}
+                   {item.src === "/financex.mp4" ?  <iframe title='financeX website' className="w-full xl:w-[576px] md:w-[480px] lg:w-[364px] lg:h-[222px] xl:h-[348px]  rounded-sm md:rounded-xl  aspect-[4/3]  " src={item.src}></iframe> : <Image priority width={500} height={500} className='rounded-sm md:rounded-md  w-[300px] md:w-[480px]  lg:w-[364px]' src={item.src} alt={item.alt}/>}
 
                 </div>
                  ))

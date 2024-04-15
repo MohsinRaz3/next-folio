@@ -106,7 +106,7 @@ export default function Contact() {
                 className="w-full h-10 my-0 px-3 rounded-sm text-lg text-white bg-[#4d517b]  outline-cyann hover:bg-[#888ed1]"
               />
             </Link> */}
-              <button
+              <button aria-label="Submit Button"
                 value="Submit"
                 type="submit"
                 disabled={state.submitting}

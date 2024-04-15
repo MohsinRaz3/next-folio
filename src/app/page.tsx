@@ -45,7 +45,8 @@ export default function Home() {
 
 <div className="md:flex md:flex-col md:items-center md:justify-center md:mx-auto  md:px-6 lg:px-24" >
 <h2 className="mt-14 mb-2 text-2xl text-black font-bold md:text-3xl md:py-5">ABOUT ME ...</h2>
-<p className="md:pl-12 text-xl md:text-3xl">I build modern AI and web application using cutting-edge technologies. Experienced in generative AI and Web3 development, proficient in Python & Javascript languages. On a mission to help businesses grow, by seamlessly integrating AI automation into their workflow. </p>
+<p className="text-[23px] text- font-medium md:mx-20 text-center">I build modern AI and web applications using cutting-edge technologies. Experienced in generative AI and Web3 development, proficient in Python & Javascript languages. On a mission to help businesses grow by seamlessly integrating AI automation into their workflow.</p>
+{/* <p className="md:pl-12 text-xl md:text-3xl">I build modern AI and web application using cutting-edge technologies. Experienced in generative AI and Web3 development, proficient in Python & Javascript languages. On a mission to help businesses grow, by seamlessly integrating AI automation into their workflow. </p> */}
 </div>
 </div>
 <Skills/>

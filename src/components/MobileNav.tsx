@@ -20,16 +20,16 @@ export const MobileNav = () => {
             } text-${hashPath == "/" ? "black" : "black"} px-1.5   rounded-2xl`} href={"/"} > Home
         </Link>
 
-        <a id="projects" onClick={()=> setHashpath("#projects")}
+        <Link id="projects" onClick={()=> setHashpath("#projects")}
           className={`transition-all  duration-400  ease-in font-extralight py-1.5 border border-0.1 border-${ `${hashPath}` == "#projects" ? "black" : "none"} bg-${"#projects" == `${hashPath}` ? "[#BFDEC0]" : "[#000]"
             } text-${"#projects" == `${hashPath}` ? "black" : "black"} px-1   rounded-2xl`} href={`/#projects`} > Projects
-        </a>
+        </Link>
 
         
-        <a id="testimonials" onClick={()=> setHashpath("#testimonials")}
+        <Link id="testimonials" onClick={()=> setHashpath("#testimonials")}
           className={`transition-all  duration-400  ease-in font-extralight py-1.5 border border-0.1 border-${hashPath == "#testimonials" ? "black" : "none"} bg-${hashPath == "#testimonials" ? "[#BFDEC0]" : "[#000]"
             } text-${hashPath == "#testimonials" ? "black" : "black"} px-1   rounded-2xl`} href={"/#testimonials"} > Testimonials
-        </a>
+        </Link>
 
         <Link onClick={()=>setHashpath("/blogs")}
           className={`transition-all  duration-400  ease-in font-extralight py-1.5 border border-0.1 border-${hashPath == "/blogs" ? "black" : "none"} bg-${hashPath == "/blogs" ? "[#BFDEC0]" : "[#000]"

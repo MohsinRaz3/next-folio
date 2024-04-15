@@ -31,9 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-          <head><GoogleTagManager gtmId="TRVMTP3M" /></head>
+          <head><GoogleTagManager gtmId="GTM-TRVMTP3M" /></head>
       <body className={`${OfficeTimes.className}`} >
-      <noscript> <iframe src="https://www.googletagmanager.com/gtm.js?id=TRVMTP3M"></iframe></noscript>
+      <noscript> <iframe src="https://www.googletagmanager.com/gtm.js?id=GTM-TRVMTP3M"></iframe></noscript>
 
         <Navbar />
         {children}

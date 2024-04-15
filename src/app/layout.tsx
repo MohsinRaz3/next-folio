@@ -1,4 +1,5 @@
-import GoogleTagManager from "@/components/utils/GoogleTagManager";
+// import GoogleTagManager from "@/components/utils/GoogleTagManager";
+import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -30,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-          <head><GoogleTagManager containerId="TRVMTP3M" /></head>
+          <head><GoogleTagManager gtmId="TRVMTP3M" /></head>
       <body className={`${OfficeTimes.className}`} >
       <noscript> <iframe src="https://www.googletagmanager.com/gtm.js?id=TRVMTP3M"></iframe></noscript>
 

@@ -15,6 +15,7 @@
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.36.4",
     "@types/react-slick": "^0.23.13",
+    "@vercel/analytics": "^1.5.0",
     "lucide-react": "^0.344.0",
     "next": "14.2",
     "next-sanity": "^7.1.0",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20",
+    "@types/normalize-package-data": "^2.4.4",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",

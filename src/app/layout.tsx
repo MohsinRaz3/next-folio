@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import { OfficeTimes } from "@/components/utils/customFonts";
 import { MobileNav } from "@/components/MobileNav";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mohsinraz.vercel.app"),
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Footer />
 
         <MobileNav />
+        <Analytics />
       </body>
     </html>
   );

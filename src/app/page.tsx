@@ -2,10 +2,29 @@ import Icon from "@/components/utils/lucidIcons";
 import Link from 'next/link'
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
-import Testimonials from "@/components/Testimonials";
+import dynamic from "next/dynamic";
 import Contact from "@/components/ContactUs";
 import { Metadata } from "next";
 import "./globals.css"
+
+// Dynamically import Testimonials with SSR disabled to prevent document access during build
+// react-slick uses styled-components which accesses document, so we must disable SSR
+const Testimonials = dynamic(() => import("@/components/Testimonials"), {
+  ssr: false,
+  loading: () => (
+    <section className="relative py-16 md:py-20 px-6 md:px-8 lg:px-24 bg-white border-t-[6px] border-b-[6px] border-black">
+      <div className="mb-12 md:mb-16">
+        <h2 className="font-lexend text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-black text-center">
+          WHAT CLIENTS SAY
+        </h2>
+        <div className="w-32 h-2 bg-black mx-auto mt-4"></div>
+      </div>
+      <div className="max-w-4xl mx-auto text-center py-12">
+        <p className="font-public text-lg uppercase">Loading testimonials...</p>
+      </div>
+    </section>
+  ),
+});
 
 export const metadata: Metadata = {
   title :{

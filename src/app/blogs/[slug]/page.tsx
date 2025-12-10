@@ -65,6 +65,15 @@ const PostPage = async ({ params }: { params: RouteParams }) => {
   const post = await sanityFetch<SanityDocument>({ query: postQuery, params })
   // console.log(post);
 
+  if (!post) {
+    return (
+      <main className="container mx-auto px-4 py-16">
+        <h1>Post not found</h1>
+        <p>The blog post you're looking for doesn't exist.</p>
+      </main>
+    );
+  }
+
   return (
     <Post post={post} />
   )

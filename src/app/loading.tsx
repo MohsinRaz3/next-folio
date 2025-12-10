@@ -1,6 +1,3 @@
-"use client"
-import { Player, Controls } from '@lottiefiles/react-lottie-player';
-
 export default function Loading() {
     return (
         <div className="min-h-screen bg-white border-t-[6px] border-b-[6px] border-black flex items-center justify-center p-6 md:p-8">
@@ -10,16 +7,13 @@ export default function Loading() {
                     LOADING...
                 </h2>
                 
-                {/* Lottie Animation */}
-                <div className="border-4 border-black p-4 bg-white">
-                    <Player
-                        autoplay
-                        loop
-                        src="/lottieloading.json"
-                        style={{ height: '250px', width: '250px', margin: '0 auto' }}
-                    >
-                        <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-                    </Player>
+                {/* Simple CSS Loading Animation - SSR safe */}
+                <div className="border-4 border-black p-4 bg-white flex items-center justify-center" style={{ height: '250px', width: '250px', margin: '0 auto' }}>
+                    <div className="flex gap-2">
+                        <div className="w-4 h-4 bg-black animate-bounce" style={{ animationDelay: '0ms' }}></div>
+                        <div className="w-4 h-4 bg-black animate-bounce" style={{ animationDelay: '150ms' }}></div>
+                        <div className="w-4 h-4 bg-black animate-bounce" style={{ animationDelay: '300ms' }}></div>
+                    </div>
                 </div>
 
                 {/* Decorative Line */}

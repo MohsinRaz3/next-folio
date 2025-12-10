@@ -36,7 +36,42 @@ body {
 
 
 
-   .slick-slider{
-    @apply bg-[#FFDCB9] shadow-sm;
+   /* Neo-Brutalism Float Animation */
+   @keyframes float {
+     0%, 100% { transform: translateY(0px); }
+     50% { transform: translateY(-20px); }
+   }
+
+   .animate-float {
+     animation: float 3s ease-in-out infinite;
+   }
+
+   /* Fix testimonial slider padding and background */
+   .testimonial-slider {
+     background: transparent !important;
+   }
+
+   .testimonial-slider .slick-slide {
+     padding: 0 !important;
+     margin: 0 !important;
+   }
+
+   .testimonial-slider .slick-list {
+     margin: 0 !important;
+     padding: 0 !important;
+   }
+
+   .testimonial-slider .slick-track {
+     display: flex !important;
+   }
+
+   .testimonial-slider .slick-slide > div {
+     width: 100% !important;
+     outline: none !important;
+     height: 100% !important;
+   }
+
+   .testimonial-slider .slick-slide {
+     height: auto !important;
    }
   

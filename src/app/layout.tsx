@@ -7,6 +7,17 @@ import { OfficeTimes } from "@/components/utils/customFonts";
 import { MobileNav } from "@/components/MobileNav";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next"
+import { Lexend, Public_Sans } from "next/font/google";
+
+const lexend = Lexend({ 
+  subsets: ["latin"],
+  variable: "--font-lexend",
+});
+
+const publicSans = Public_Sans({ 
+  subsets: ["latin"],
+  variable: "--font-public",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mohsinraz.vercel.app"),
@@ -33,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
           {/* <head><GoogleTagManager containerId="GTM-TRVMTP3M" /></head> */}
-      <body className={`${OfficeTimes.className}`} >
+      <body className={`${OfficeTimes.className} ${lexend.variable} ${publicSans.variable}`} >
       {/* <noscript> <iframe src="https://www.googletagmanager.com/gtm.js?id=GTM-TRVMTP3M"></iframe></noscript> */}
 
         <Navbar />

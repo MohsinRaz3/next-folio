@@ -10,7 +10,9 @@ const config: Config = {
     fontFamily:{
       OfficeTimes : ["var(--font-officetimes)"],
       CaliberFont : ["var(--font-caliberfont)"],
-      CalibreReg : ["var(--font-calibrereg"]
+      CalibreReg : ["var(--font-calibrereg"],
+      lexend: ["var(--font-lexend)"],
+      public: ["var(--font-public)"],
     },  
     extend: {
       screens: {
@@ -41,7 +43,15 @@ const config: Config = {
         secondary: "#4682b4", // Add your secondary color code here
         txtwhite: '#EEF5FC',
         txtgray: '#dde1e7',
-        txtblack: '#000000'
+        txtblack: '#000000',
+        // Neo-Brutalism colors
+        'neo-cyan': '#7DF9FF',
+        'neo-pink': '#FF00F5',
+        'neo-yellow': '#FFEB3B',
+        'neo-orange': '#FF9800',
+      },
+      borderWidth: {
+        '6': '6px',
       },
     },
   },

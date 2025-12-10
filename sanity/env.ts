@@ -15,7 +15,13 @@ export const useCdn = false
 
 function assertValue<T>(v: T | undefined, errorMessage: string): T {
   if (v === undefined) {
-    throw new Error(errorMessage)
+    throw new Error(
+      `${errorMessage}\n\n` +
+      `Please create a .env.local file in the root directory with the required environment variables.\n` +
+      `Example:\n` +
+      `NEXT_PUBLIC_SANITY_PROJECT_ID=your-project-id\n` +
+      `NEXT_PUBLIC_SANITY_DATASET=production\n`
+    )
   }
 
   return v

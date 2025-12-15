@@ -40,7 +40,7 @@ export default function Testimonial() {
   ];
 
   return (
-    <section id="testimonials" className="relative py-16 md:py-20 px-6 md:px-8 lg:px-24 bg-white border-t-[6px] border-b-[6px] border-black">
+    <section id="testimonials" className="relative py-16 md:py-20 px-6 md:px-8 lg:px-24 bg-[#F3E8FF] border-t-[6px] border-b-[6px] border-black">
       {/* Section Header */}
       <div className="mb-12 md:mb-16">
         <h2 className="font-lexend text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-black text-center">
@@ -90,8 +90,8 @@ export default function Testimonial() {
                         <h3 className="font-public font-bold text-base md:text-lg uppercase tracking-wider text-black">
                           {single.username.toUpperCase()}
                         </h3>
-                        <p className="font-public text-xs md:text-sm uppercase tracking-wide text-black">
-                          {single.country.toUpperCase()}
+                        <p className="font-public text-xs md:text-sm  tracking-wide text-black">
+                          {single.country}
                         </p>
                       </div>
                     </div>
@@ -104,8 +104,8 @@ export default function Testimonial() {
                       </div>
                       
                       {/* Testimonial Comment */}
-                      <p className="font-public text-sm md:text-base lg:text-lg leading-relaxed text-black font-medium uppercase tracking-wide px-1">
-                        {single.comment.toUpperCase()}
+                      <p className="font-public text-sm md:text-base lg:text-lg leading-relaxed text-black font-medium  tracking-wide px-1">
+                        {single.comment}
                       </p>
                       
                       {/* Closing Quote Mark */}

@@ -15,7 +15,7 @@ const Skills = () => {
   ]
 
   return (
-    <section id="skills" className="relative py-16 md:py-20 px-6 md:px-8 lg:px-24 bg-white border-t-[6px] border-b-[6px] border-black">
+    <section id="skills" className="relative py-16 md:py-20 px-6 md:px-8 lg:px-24 bg-[#F3E8FF] border-t-[6px] border-b-[6px] border-black">
       {/* Section Header */}
       <div className="mb-12 md:mb-16">
         <h2 className="font-lexend text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-black text-center">

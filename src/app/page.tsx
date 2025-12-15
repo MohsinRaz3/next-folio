@@ -12,7 +12,7 @@ import "./globals.css"
 const Testimonials = dynamic(() => import("@/components/Testimonials"), {
   ssr: false,
   loading: () => (
-    <section className="relative py-16 md:py-20 px-6 md:px-8 lg:px-24 bg-white border-t-[6px] border-b-[6px] border-black">
+    <section className="relative py-16 md:py-20 px-6 md:px-8 lg:px-24 bg-[#DBEAFE] border-t-[6px] border-b-[6px] border-black">
       <div className="mb-12 md:mb-16">
         <h2 className="font-lexend text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-black text-center">
           WHAT CLIENTS SAY
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   title :{
     absolute:  "Mohsin Raz"
   },
-  description: "I create modern webapp with next.js and fastapi",
+  description: "I create modern webapp with n8n, next.js and fastapi",
   openGraph: {
     images: '/opengraph-image.png',
   }
@@ -40,31 +40,35 @@ export default function Home() {
   return (
 <div>
 {/* Neo-Brutalist Hero Section */}
-<section className="relative min-h-screen bg-neo-cyan border-[6px] border-black overflow-hidden">
+<section className="relative min-h-screen bg-[#FDEEA2] border-[6px] border-black overflow-hidden">
   {/* Decorative Geometric Shapes */}
   <div className="absolute top-10 right-10 w-[300px] h-[300px] rounded-full border-8 border-black bg-neo-yellow -z-10 hidden md:block animate-float" style={{ animationDelay: '0s' }} />
   
   {/* Main Content */}
-  <div className="relative z-10 flex flex-col justify-center min-h-screen pl-[5%] md:pl-[20%] pr-8 md:pr-16 py-20">
+  <div className="relative z-10 flex flex-col justify-center min-h-screen pl-[5%] md:pl-[20%] pr-8 md:pr-16 pb-20 md:pb-28">
+     {/* Tagline */}
+     <p className="font-public text-2xl md:text-4xl lg:text-2xl font-bold text-black mt-4 md:mt-6">
+    Hi,
+    </p>
     {/* Main Headline */}
-    <h1 className="font-lexend text-5xl md:text-7xl lg:text-9xl uppercase tracking-tight text-black leading-none">
-      MOHSIN<br/>RAZ
-    </h1>
-    
-    {/* Role/Title */}
-    <p className="font-public text-xl md:text-2xl lg:text-3xl tracking-wider uppercase text-black mt-6">
-      FULLSTACK & GENAI DEVELOPER
+    <p
+      className="mt-4  bg-black text-white px-6 md:px-8 py-3 md:py-4 font-lexend font-bold text-lg md:text-xl uppercase border-4 border-black shadow-[8px_8px_0_#FACC01] transition-all duration-200 hover:shadow-[12px_12px_0_#000] hover:-translate-y-1 active:shadow-[4px_4px_0_#F3E8FF] active:translate-y-1 w-max inline-block"
+    >
+  I'm Mohsin Raz.
     </p>
     
-    {/* Tagline */}
-    <p className="font-public text-base md:text-lg leading-relaxed text-black mt-4 max-w-xl uppercase">
-      CREATING BOLD DIGITAL EXPERIENCES THAT BREAK THE MOLD
+  
+    
+    {/* Description */}
+    <p className="text-base md:text-lg max-w-2xl text-black font-public font-semibold leading-relaxed mt-4 md:mt-6">
+      A full-stack developer and AI automation expert. I help businesses streamline operations, reduce manual work and scale with custom apps and automated workflows.<br /><br />
+      I specialize in building fullstack web applications and provide low-code solutions using n8n, integrating APIs and self-hosting scalable and efficient solutions.
     </p>
     
     {/* CTA Button */}
     <a 
       href="#projects"
-      className="mt-12 bg-neo-pink text-black px-6 md:px-8 py-3 md:py-4 font-lexend font-bold text-lg md:text-xl uppercase border-4 border-black shadow-[8px_8px_0_#000] transition-all duration-200 hover:shadow-[12px_12px_0_#000] hover:-translate-y-1 active:shadow-[4px_4px_0_#000] active:translate-y-1 w-fit inline-block"
+      className="mt-12 bg-[#7BF1A7] text-black px-6 md:px-8 py-3 md:py-4 font-lexend font-bold text-lg md:text-xl uppercase border-4 border-black shadow-[8px_8px_0_#000] transition-all duration-200 hover:shadow-[12px_12px_0_#000] hover:-translate-y-1 active:shadow-[4px_4px_0_#000] active:translate-y-1 w-fit inline-block"
     >
       VIEW MY WORK
     </a>
@@ -100,17 +104,6 @@ export default function Home() {
   </div>
 </section>
 
-{/* About Section - Neo-Brutalist Style */}
-<div id="about" className="relative bg-white border-t-[6px] border-black py-16 md:py-20 px-8 md:px-16 lg:px-24">
-  <div className="max-w-4xl mx-auto">
-    <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-lexend font-bold uppercase tracking-tight mb-6 md:mb-8">
-      ABOUT ME ...
-    </h2>
-    <p className="text-lg md:text-xl lg:text-2xl text-black font-public leading-relaxed uppercase">
-      I BUILD MODERN AI AND WEB APPLICATIONS USING CUTTING-EDGE TECHNOLOGIES. EXPERIENCED IN GENERATIVE AI AND WEB3 DEVELOPMENT, PROFICIENT IN PYTHON & JAVASCRIPT LANGUAGES. ON A MISSION TO HELP BUSINESSES GROW BY SEAMLESSLY INTEGRATING AI AUTOMATION INTO THEIR WORKFLOW.
-    </p>
-  </div>
-</div>
 <Skills/>
 <Projects/>
 <Testimonials />

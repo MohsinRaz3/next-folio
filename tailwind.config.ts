@@ -45,9 +45,9 @@ const config: Config = {
         txtgray: '#dde1e7',
         txtblack: '#000000',
         // Neo-Brutalism colors
-        'neo-cyan': '#7DF9FF',
-        'neo-pink': '#FF00F5',
-        'neo-yellow': '#FFEB3B',
+        'neo-cyan': '#65A0FF',
+        'neo-pink': '#FEA5D6',
+        'neo-yellow': '#FACC01',
         'neo-orange': '#FF9800',
       },
       borderWidth: {

@@ -53,11 +53,11 @@ export const projectData = [
     },
     {
         id: 4,
-        projectName: "Space Gorilla",
-        projectLink: "https://spacegorilla.netlify.app/",
-        Techstack: ["Next.js","TailwindCSS","Netlify"],
-        src: "/spacegorilla.png",
-        alt: "space gorilla"
+        projectName: "Text Behind Picture",
+        projectLink: "https://www.textbehindpicture.com/",
+        Techstack: ["Next.js","Typescript","Supabase"],
+        src: "/tbp.PNG",
+        alt: "text behind picture"
     },
     {
         id: 5,

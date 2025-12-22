@@ -64,7 +64,7 @@ export default function Home() {
       
       {/* Description */}
       <p className="text-base md:text-lg text-black font-public font-semibold leading-relaxed mt-4 md:mt-6">
-      Full-stack & AI automation expert helping businesses streamline operations and save 15–20 hours every week with agents and workflows. </p>
+      Full-stack & AI automation expert helping businesses streamline operations and save 15–20 hours every week with agents and Web Applications. </p>
       
       {/* CTA Button */}
       <a 
@@ -75,11 +75,11 @@ export default function Home() {
       </a>
 
       {/* Social Links - Neo-Brutalist Style */}
-      <div className="flex flex-wrap gap-3 md:gap-4 mt-4 md:mt-8">
+      <div className="flex flex-wrap gap-2 md:gap-4 mt-4 md:mt-8">
         <Link 
           href={"https://github.com/mohsinraz3"} 
           target="_blank"
-          className="bg-neo-yellow border-4 border-black px-1.5 md:px-4 py-1.5 md:py-2 font-public font-bold text-xs md:text-sm uppercase shadow-[4px_4px_0_#000] transition-all duration-200 hover:shadow-[6px_6px_0_#000] hover:-translate-y-0.5 active:shadow-[2px_2px_0_#000] active:translate-y-0.5 flex items-center gap-x-2"
+          className="bg-neo-yellow border-4 border-black px-0.5 md:px-4 py-1 md:py-2 font-public font-semibold md:font-bold text-xs md:text-sm uppercase shadow-[4px_4px_0_#000] transition-all duration-200 hover:shadow-[6px_6px_0_#000] hover:-translate-y-0.5 active:shadow-[2px_2px_0_#000] active:translate-y-0.5 flex items-center gap-x-2"
         >
           <Icon name="github"/> <span>GITHUB</span>
         </Link>
@@ -87,7 +87,7 @@ export default function Home() {
         <Link 
           href={"https://twitter.com/mohsin_codes"} 
           target="_blank"
-          className="bg-neo-cyan border-4 border-black px-1.5 md:px-4 py-1.5 md:py-2 font-public font-bold text-xs md:text-sm uppercase shadow-[4px_4px_0_#000] transition-all duration-200 hover:shadow-[6px_6px_0_#000] hover:-translate-y-0.5 active:shadow-[2px_2px_0_#000] active:translate-y-0.5 flex items-center gap-x-2 text-black"
+          className="bg-neo-cyan border-4 border-black px-0.5 md:px-4 py-1 md:py-2 font-public font-semibold md:font-bold text-xs md:text-sm uppercase shadow-[4px_4px_0_#000] transition-all duration-200 hover:shadow-[6px_6px_0_#000] hover:-translate-y-0.5 active:shadow-[2px_2px_0_#000] active:translate-y-0.5 flex items-center gap-x-2 text-black"
         >
           <Icon name="twitter" color="#000" /> 
           <span>TWITTER</span>
@@ -96,7 +96,7 @@ export default function Home() {
         <Link 
           href={"https://www.linkedin.com/in/mohsinraz/"} 
           target="_blank"
-          className="bg-neo-orange border-4 border-black px-1.5 md:px-4 py-1.5 md:py-2 font-public font-bold text-xs md:text-sm uppercase shadow-[4px_4px_0_#000] transition-all duration-200 hover:shadow-[6px_6px_0_#000] hover:-translate-y-0.5 active:shadow-[2px_2px_0_#000] active:translate-y-0.5 flex items-center gap-x-2 text-black"
+          className="bg-neo-orange border-4 border-black px-0.5 md:px-4 py-1 md:py-2 font-public font-semibold md:font-bold text-xs md:text-sm uppercase shadow-[4px_4px_0_#000] transition-all duration-200 hover:shadow-[6px_6px_0_#000] hover:-translate-y-0.5 active:shadow-[2px_2px_0_#000] active:translate-y-0.5 flex items-center gap-x-2 text-black"
         >
           <Icon name="linkedin" color="#000"/>
           <span className="mt-1">LINKEDIN</span>

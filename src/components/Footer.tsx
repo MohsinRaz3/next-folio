@@ -22,7 +22,7 @@ const Footer = () => {
           {/* Right Section - CTA Button */}
           <div className="flex justify-center md:justify-end">
             <Link 
-              href="#Contact"
+              href="/#Contact "
               className="bg-neo-pink text-black border-4 border-black shadow-[8px_8px_0_#000] px-8 md:px-10 py-4 md:py-5 font-lexend font-bold text-lg md:text-xl lg:text-2xl uppercase tracking-wider transition-all duration-200 hover:shadow-[12px_12px_0_#000] hover:-translate-y-1 hover:-translate-x-1 active:shadow-[4px_4px_0_#000] active:translate-y-1 active:translate-x-1 flex items-center gap-x-3"
             >
               GET IN TOUCH

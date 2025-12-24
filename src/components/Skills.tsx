@@ -8,10 +8,11 @@ const Skills = () => {
     { image: '/fatapi-removebg-preview.png', bgColor: 'bg-neo-pink' },
     { image: '/streamlit-removebg-preview.png', bgColor: 'bg-neo-yellow' },
     { image: '/postgres-removebg-preview.png', bgColor: 'bg-neo-orange' },
-    { image: '/pandas.png', bgColor: 'bg-white' },
-    { image: '/JavaScript-logo.png', bgColor: 'bg-neo-cyan' },
-    { image: '/nextjs-removebg-preview.png', bgColor: 'bg-neo-pink' },
     { image: '/openai.png', bgColor: 'bg-neo-yellow' },
+     { image: '/dockerlogo.png', bgColor: 'bg-white' },
+    { image: '/tailwindcss.png', bgColor: 'bg-neo-cyan' }, 
+    { image: '/nextjs-removebg-preview.png', bgColor: 'bg-neo-pink' },
+ 
   ]
 
   return (
@@ -50,7 +51,7 @@ const Skills = () => {
             <div className="relative w-24 h-24 md:w-32 md:h-32 flex items-center justify-center">
               <Image
                 src={skill.image}
-                alt="Technology logo"
+                alt="Technology logos"
                 width={120}
                 height={120}
                 className="object-contain"

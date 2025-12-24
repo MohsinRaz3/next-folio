@@ -7,6 +7,7 @@ import Contact from "@/components/ContactUs";
 import Image from "next/image";
 import { Metadata } from "next";
 import "./globals.css"
+import TopReviews from "@/components/TopReviews";
 
 
 // Dynamically import Testimonials with SSR disabled to prevent document access during build
@@ -42,7 +43,7 @@ export default function Home() {
   return (
 <div>
 {/* Neo-Brutalist Hero Section */}
-<section className="relative min-h-[80vh] md:min-h-[90vh] bg-[#FDEEA2] border-[6px] border-black overflow-hidden">
+<section className="relative min-h-[80vh] md:min-h-[90vh] bg-[#FDEEA2] border-t-[2px] border-b-[1px] border-black overflow-hidden">
   {/* Decorative Geometric Shapes */}
   <div className="absolute top-10 right-10 w-[300px] h-[300px] rounded-full border-8 border-black bg-neo-yellow -z-10 hidden lg:block animate-float" style={{ animationDelay: '0s' }} />
   
@@ -52,26 +53,26 @@ export default function Home() {
     {/* Left Column - Main Content */}
     <div className="flex flex-col py-10 justify-center w-full max-w-xl order-2 lg:order-1">
        {/* Tagline */}
-       {/* <p className="font-public text-2xl md:text-4xl lg:text-2xl font-bold text-black">
-      Hi,
-      </p> */}
+       <p className="font-public py-4 text-2xl md:text-4xl lg:text-2xl font-bold text-black">
+      Hi, my name is Mohsin.
+      </p>
       {/* Main Headline */}
       <p
         className=" bg-black text-white px-6 md:px-8 py-3 md:py-4 font-lexend font-bold text-lg md:text-xl uppercase border-4 border-black shadow-[8px_8px_0_#FACC01] transition-all duration-200 hover:shadow-[12px_12px_0_#000] hover:-translate-y-1 active:shadow-[4px_4px_0_#F3E8FF] active:translate-y-1 w-max inline-block"
       >
-    I'm Mohsin Raz.
+    Fullstack Developer
       </p>
       
       {/* Description */}
       <p className="text-base md:text-lg text-black font-public font-semibold leading-relaxed mt-4 md:mt-6">
-      Full-stack & AI automation expert helping businesses streamline operations and save 15–20 hours every week with agents and Web Applications. </p>
+      Helping businesses streamline operations and save 15–20 hours every week with AI agents, Automation and Web Applications. </p>
       
       {/* CTA Button */}
       <a 
         href="#projects"
         className="mt-8 md:mt-12 bg-[#7BF1A7] text-black px-4 md:px-8 py-2 md:py-4 font-lexend font-bold text-base md:text-xl uppercase border-4 border-black shadow-[8px_8px_0_#000] transition-all duration-200 hover:shadow-[12px_12px_0_#000] hover:-translate-y-1 active:shadow-[4px_4px_0_#000] active:translate-y-1 w-fit inline-block"
       >
-        VIEW MY WORK
+        Portfolio
       </a>
 
       {/* Social Links - Neo-Brutalist Style */}
@@ -105,27 +106,24 @@ export default function Home() {
     </div>
 
     {/* Right Column - Card Section */}
-    <div className="flex items-center justify-center w-full max-w-md order-1 lg:order-2">
-      <div className=" px-8 w-full">
-  {/* ProfileCard Component */}
-  <div className="flex flex-col items-center justify-center px-6    max-w-xs mx-auto">
-    <div className="md:w-64 md:h-64 w-40 h-40 border-4 border-black rounded-full overflow-hidden shadow-[4px_4px_0_#000] mb-2">
-      <Image
-        src="/mrk.png"
-        alt="Mohsin Raz"
-        className="object-cover w-full h-full"
-        width={256}
-        height={256}
-      />
-    </div>
-  </div>
-
+    <div className="flex items-center justify-center w-full order-1 lg:order-2">
+      <div className="w-full">
+        {/* ProfileCard Component */}
+        <div className="flex flex-col items-center justify-center w-full max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[800px] mx-auto">
+          <Image
+            src="/availableforwork.webp"
+            alt="Mohsin Raz"
+            className="w-full h-auto object-contain"
+            width={800}
+            height={489}
+          />
+        </div>
       </div>
     </div>
 
   </div>
 </section>
-
+<TopReviews/>
 <Skills/>
 <Projects/>
 <Testimonials />

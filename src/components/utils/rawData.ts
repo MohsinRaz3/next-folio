@@ -36,6 +36,14 @@ export const projectData = [
         alt: "fianceX"
     },
     {
+        id: 4,
+        projectName: "Text Behind Picture",
+        projectLink: "https://www.textbehindpicture.com/",
+        Techstack: ["Next.js","Typescript","Supabase"],
+        src: "/tbpp.PNG",
+        alt: "text behind picture"
+    },
+    {
         id: 2,
         projectName: "Pricing UI",
         projectLink: "https://pricing-ui-mohsinraz3.vercel.app/",
@@ -51,19 +59,12 @@ export const projectData = [
         src: "/bullartnft.png",
         alt: "bulartnft"
     },
-    {
-        id: 4,
-        projectName: "Text Behind Picture",
-        projectLink: "https://www.textbehindpicture.com/",
-        Techstack: ["Next.js","Typescript","Supabase"],
-        src: "/tbp.PNG",
-        alt: "text behind picture"
-    },
+ 
     {
         id: 5,
         projectName: "Notes App",
         projectLink: "https://github.com/MohsinRaz3/fastapi-notesapp",
-        Techstack: ["FastAPI","Next.js", "Postgresql"],
+        Techstack: ["FastAPI","Docker", "Postgresql"],
         src: "/notesapp.png",
         alt: "notes app"
     },
@@ -178,6 +179,15 @@ export const testmonialsData = [
 
 
     // },
+     {
+        username: "Narjeet",
+        avatar : "/review/parents_hq_logo.jfif",
+        country : "United Kingdom",
+        stars: [1,2,3,4,5],
+        comment : "Mohsin was so patient with me and went through each step slowly. He didn’t give up until he managed to do what I needed. Which was a difficult task. I will use him again for sure. Thanks Mohsin! "
+
+
+    },
     {
         username: "bullnftartist",
         avatar : "/review/avatar.png",
@@ -268,8 +278,8 @@ export const testmonialsData = [
     }
     ,
     {
-        username: "docdano",
-        avatar : "/review/avatar.png",
+        username: "Dan MCcoy, MD",
+        avatar : "/review/danmccoy.jpg",
         country : "United States",
         stars: [1,2,3,4,5],
         comment : "Mohsin is probably one of the best developers I have worked with on Fiverr. He functions independently, studies complex issues, makes logical conclusions, and executes quickly. You couldn't ask for a better experience. I highly recommend him, and we will continue to use him for future projects."

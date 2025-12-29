@@ -65,6 +65,20 @@ const Footer = () => {
           <p className="font-public text-sm md:text-base uppercase tracking-wider text-black">
             © {new Date().getFullYear()} MOHSIN RAZ. ALL RIGHTS RESERVED.
           </p>
+          <div className="flex flex-row justify-center items-center gap-4 mt-2">
+            <a
+              href="/privacy-policy"
+              className="font-public text-xs md:text-sm text-black px-2 py-1 underline hover:text-neo-cyan transition-colors duration-150"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="/terms-and-condition"
+              className="font-public text-xs md:text-sm text-black px-2 py-1 underline hover:text-neo-orange transition-colors duration-150"
+            >
+              Terms &amp; Conditions
+            </a>
+          </div>
         </div>
       </div>
 

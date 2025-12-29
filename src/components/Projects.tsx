@@ -20,7 +20,7 @@ const Projects = () => {
     'bg-neo-pink',
     'bg-neo-yellow',
     'bg-neo-orange',
-    'bg-white',
+    'bg-[#D975F0]',
     'bg-neo-cyan',
   ];
 

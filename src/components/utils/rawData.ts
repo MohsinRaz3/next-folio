@@ -62,11 +62,11 @@ export const projectData = [
  
     {
         id: 5,
-        projectName: "Notes App",
-        projectLink: "https://github.com/MohsinRaz3/fastapi-notesapp",
-        Techstack: ["FastAPI","Docker", "Postgresql"],
-        src: "/notesapp.png",
-        alt: "notes app"
+        projectName: "TinyTales",
+        projectLink: "https://github.com/MohsinRaz3/tinytales-backend",
+        Techstack: ["FastAPI","Docker", "Fal.ai"],
+        src: "/tiny-tales-ui.png",
+        alt: "TinyTales"
     },
     {
         id: 6,

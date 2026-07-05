@@ -6,11 +6,12 @@ const Skills = () => {
   const skills = [
     { image: '/pythoon-removebg-preview.png', bgColor: 'bg-neo-cyan' },
     { image: '/fatapi-removebg-preview.png', bgColor: 'bg-neo-pink' },
-    { image: '/streamlit-removebg-preview.png', bgColor: 'bg-neo-yellow' },
+    { image: '/claude-code.svg', bgColor: 'bg-[#1F1F1E]' },
     { image: '/postgres-removebg-preview.png', bgColor: 'bg-neo-orange' },
+    { image: '/n8n-logo.svg', bgColor: 'bg-[#0E0918]' },
     { image: '/openai.png', bgColor: 'bg-neo-yellow' },
      { image: '/dockerlogo.png', bgColor: 'bg-white' },
-    { image: '/tailwindcss.png', bgColor: 'bg-neo-cyan' }, 
+    
     { image: '/nextjs-removebg-preview.png', bgColor: 'bg-neo-pink' },
  
   ]

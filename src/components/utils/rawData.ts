@@ -45,19 +45,19 @@ export const projectData = [
     },
     {
         id: 2,
-        projectName: "Pricing UI",
-        projectLink: "https://pricing-ui-mohsinraz3.vercel.app/",
-        Techstack: ["Next.js","Figma","Chakra UI"],
-        src: "/pricingui.png",
-        alt: "pricingui"
+        projectName: "Desert Eagle Drilling",
+        projectLink: "https://www.deserteagledrilling.com/",
+        Techstack: ["Website","SEO + Conversion Audit","Google Ads"],
+        src: "/images/desert-eagle-drilling.webp",
+        alt: "Redesigned website for Desert Eagle Drilling"
     },
     {
         id: 3,
-        projectName: "Bull Art NFT",
-        projectLink: "https://bullartnft.netlify.app/",
-        Techstack: ["Netlify","Swiper.js","Javascript"],
-        src: "/bullartnft.png",
-        alt: "bulartnft"
+        projectName: "Elite Plumbing",
+        projectLink: "https://plumbingwebsitedesign.vercel.app/",
+        Techstack: ["Website","Web Design","Lead Generation"],
+        src: "/images/plumbingwebsitedesign.webp",
+        alt: "Website design for Elite Plumbing, an Austin plumbing company"
     },
  
     {

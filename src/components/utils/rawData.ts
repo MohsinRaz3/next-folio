@@ -38,7 +38,7 @@ export const projectData = [
     {
         id: 4,
         projectName: "Text Behind Picture",
-        projectLink: "https://www.textbehindpicture.com/",
+        projectLink: "https://textbehindpicture.vercel.app",
         Techstack: ["Next.js","Typescript","Supabase"],
         src: "/tbpp.PNG",
         alt: "text behind picture"
